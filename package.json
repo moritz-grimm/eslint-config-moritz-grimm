@@ -2,8 +2,8 @@
     "name": "eslint-config-moritz-grimm",
     "version": "1.0.0",
     "description": "My preferred eslint config",
-    "author": "Moritz-Grimm",
-    "license": "ISC",
+    "author": "moritz-grimm",
+    "license": "MIT",
     "dependencies": {
         "@stylistic/eslint-plugin": "5.4.0",
         "@eslint/js": "^9.37.0",
@@ -17,6 +17,6 @@
     },
     "scripts": {
         "lint": "npx eslint",
-        "lint-and-fix": "npx eslint --fix"
+        "lint:fix": "npx eslint --fix"
     }
 }
