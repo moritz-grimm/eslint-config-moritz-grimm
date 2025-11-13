@@ -69,9 +69,7 @@ export default [
                 "asyncArrow": "never",
                 "catch": "always",
             }],
-            'stylistic/no-trailing-spaces': 'warn',
-            'stylistic/eol-last': ['warn', 'always'],
-            'stylistic/no-multi-spaces': 'warn',
+            "stylistic/quotes": ["warn", "double", { "allowTemplateLiterals": "always" }],
         },
     },
 ];
