@@ -21,6 +21,12 @@ My preferred ESLint config for JavaScript and TypeScript projects.
 npm install --save-dev @moritz-grimm/eslint-config-moritz-grimm
 ```
 
+or if you prefer Bun
+
+```bash
+bun install @moritz-grimm/eslint-config-moritz-grimm --dev
+```
+
 ### Requirements
 
 - **Node.js:** >=18.0.0
@@ -44,7 +50,7 @@ This config is modular. You can import everything or only specific parts.
 Import all rules (base + stylistic + TypeScript):
 
 ```js
-import eslintConfig from "eslint-config-moritz-grimm";
+import eslintConfig from "@moritz-grimm/eslint-config-moritz-grimm";
 
 export default [
     ...eslintConfig,
@@ -58,7 +64,7 @@ Pick only what you need:
 **Base rules** (core JavaScript/TypeScript linting):
 
 ```js
-import eslintConfig from "eslint-config-moritz-grimm/base";
+import eslintConfig from "@moritz-grimm/eslint-config-moritz-grimm/base";
 
 export default [
     ...eslintConfig,
@@ -68,7 +74,7 @@ export default [
 **Stylistic rules** (code formatting):
 
 ```js
-import eslintConfig from "eslint-config-moritz-grimm/stylistic";
+import eslintConfig from "@moritz-grimm/eslint-config-moritz-grimm/stylistic";
 
 export default [
     ...eslintConfig,
@@ -78,7 +84,7 @@ export default [
 **TypeScript rules** (type-checked linting):
 
 ```js
-import eslintConfig from "eslint-config-moritz-grimm/typescript";
+import eslintConfig from "@moritz-grimm/eslint-config-moritz-grimm/typescript";
 
 export default [
     ...eslintConfig,
@@ -88,8 +94,8 @@ export default [
 You can also combine multiple modules:
 
 ```js
-import baseConfig from "eslint-config-moritz-grimm/base";
-import stylisticConfig from "eslint-config-moritz-grimm/stylistic";
+import baseConfig from "@moritz-grimm/eslint-config-moritz-grimm/base";
+import stylisticConfig from "@moritz-grimm/eslint-config-moritz-grimm/stylistic";
 
 export default [
     ...baseConfig,
