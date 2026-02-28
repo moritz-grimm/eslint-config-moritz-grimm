@@ -20,6 +20,7 @@ export default [
             "@typescript-eslint/no-floating-promises": "error",
             "@typescript-eslint/no-unsafe-member-access": "warn",
             "@typescript-eslint/no-unused-vars": "warn",
+            "@typescript-eslint/explicit-member-accessibility": "warn",
         },
     },
 ];
